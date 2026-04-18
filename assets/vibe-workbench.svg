@@ -1,0 +1,119 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">StarryJia's Python and AI workshop</title>
+  <desc id="desc">An illustrated coding workbench with Python, AI prompts, tiny tools, bots, and playful stars.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.5" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="330" y1="90" x2="875" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" stroke="#cbd5e1" stroke-width="1" opacity="0.45"/>
+    </pattern>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .spark { animation: twinkle 3.4s ease-in-out infinite; transform-origin: center; }
+      .spark:nth-of-type(2n) { animation-delay: .7s; }
+      .spark:nth-of-type(3n) { animation-delay: 1.3s; }
+      .pulse { animation: pulse 4s ease-in-out infinite; }
+      .flow { stroke-dasharray: 8 10; animation: dash 10s linear infinite; }
+      @keyframes twinkle {
+        0%, 100% { opacity: .35; transform: scale(.92); }
+        50% { opacity: 1; transform: scale(1.08); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: .78; }
+        50% { opacity: 1; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -180; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#grid)" opacity="0.55"/>
+
+  <path class="flow" d="M194 142 C300 80 370 128 430 160" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/>
+  <path class="flow" d="M780 132 C875 74 982 92 1040 158" stroke="#db2777" stroke-width="3" stroke-linecap="round"/>
+  <path class="flow" d="M230 295 C356 356 450 332 525 292" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+
+  <g class="spark">
+    <path d="M112 76 l8 19 20 7 -20 7 -8 19 -8 -19 -20 -7 20 -7 8 -19Z" fill="#f59e0b"/>
+  </g>
+  <g class="spark">
+    <path d="M1087 58 l6 14 15 5 -15 5 -6 14 -6 -14 -15 -5 15 -5 6 -14Z" fill="#0f766e"/>
+  </g>
+  <g class="spark">
+    <path d="M1051 330 l7 16 17 6 -17 6 -7 16 -7 -16 -17 -6 17 -6 7 -16Z" fill="#db2777"/>
+  </g>
+  <circle class="spark" cx="163" cy="331" r="6" fill="#06b6d4"/>
+  <circle class="spark" cx="990" cy="116" r="5" fill="#f97316"/>
+  <circle class="spark" cx="314" cy="63" r="4" fill="#db2777"/>
+
+  <g filter="url(#shadow)">
+    <rect x="315" y="82" width="570" height="250" rx="20" fill="url(#terminal)" stroke="#22d3ee" stroke-width="2"/>
+    <rect x="315" y="82" width="570" height="46" rx="20" fill="#0f172a"/>
+    <path d="M315 108 H885" stroke="#334155" stroke-width="1"/>
+    <circle cx="346" cy="105" r="7" fill="#fb7185"/>
+    <circle cx="370" cy="105" r="7" fill="#fbbf24"/>
+    <circle cx="394" cy="105" r="7" fill="#34d399"/>
+    <text x="430" y="110" class="mono" fill="#cbd5e1" font-size="15">tiny_lab.py</text>
+
+    <text x="348" y="160" class="mono" font-size="19" fill="#bae6fd">from idea import spark</text>
+    <text x="348" y="196" class="mono" font-size="19" fill="#bbf7d0">with ai.pair() as vibe:</text>
+    <text x="378" y="232" class="mono" font-size="19" fill="#fed7aa">build("useful little thing")</text>
+    <text x="378" y="268" class="mono" font-size="19" fill="#e9d5ff">ship_when_it_breathes()</text>
+    <rect x="348" y="288" width="194" height="28" rx="8" fill="#134e4a"/>
+    <text x="365" y="308" class="mono" font-size="15" fill="#ccfbf1">status: alive</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="128" width="205" height="135" rx="18" fill="#ffffff" stroke="#bae6fd"/>
+    <rect x="112" y="149" width="72" height="72" rx="16" fill="#ecfeff"/>
+    <path d="M139 176 C119 176 123 204 141 199 C148 216 179 207 169 188 C186 182 174 158 156 166 C152 151 128 155 139 176Z" fill="#0f766e"/>
+    <circle cx="133" cy="181" r="4" fill="#ffffff"/>
+    <circle cx="157" cy="181" r="4" fill="#ffffff"/>
+    <path d="M134 193 C142 199 153 199 161 193" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <text x="205" y="169" class="sans" font-size="18" font-weight="700" fill="#0f172a">Python</text>
+    <text x="205" y="195" class="mono" font-size="13" fill="#475569">scripts</text>
+    <text x="205" y="217" class="mono" font-size="13" fill="#475569">bots</text>
+    <text x="205" y="239" class="mono" font-size="13" fill="#475569">tools</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="910" y="142" width="214" height="142" rx="22" fill="#ffffff" stroke="#fecdd3"/>
+    <rect x="940" y="172" width="87" height="68" rx="18" fill="#fff1f2"/>
+    <rect x="961" y="154" width="45" height="25" rx="12" fill="#db2777"/>
+    <circle cx="969" cy="202" r="8" fill="#db2777"/>
+    <circle cx="998" cy="202" r="8" fill="#db2777"/>
+    <path d="M966 225 C978 235 993 235 1004 225" stroke="#db2777" stroke-width="5" stroke-linecap="round"/>
+    <text x="1045" y="183" class="sans" font-size="18" font-weight="700" fill="#0f172a">AI pair</text>
+    <text x="1045" y="209" class="mono" font-size="13" fill="#475569">prompt</text>
+    <text x="1045" y="231" class="mono" font-size="13" fill="#475569">iterate</text>
+    <text x="1045" y="253" class="mono" font-size="13" fill="#475569">polish</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="155" y="286" width="148" height="70" rx="16" fill="#fffbeb" stroke="#fde68a"/>
+    <text x="179" y="318" class="sans" font-size="18" font-weight="700" fill="#92400e">tiny idea</text>
+    <text x="179" y="341" class="mono" font-size="12" fill="#a16207">worth building</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="886" y="305" width="157" height="62" rx="16" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <text x="910" y="334" class="sans" font-size="17" font-weight="700" fill="#166534">small ship</text>
+    <text x="910" y="356" class="mono" font-size="12" fill="#15803d">useful soon</text>
+  </g>
+
+  <text x="600" y="382" text-anchor="middle" class="sans" font-size="25" font-weight="800" fill="#0f172a">StarryJia</text>
+  <text x="600" y="405" text-anchor="middle" class="mono" font-size="15" fill="#475569">idea -&gt; prompt -&gt; Python -&gt; tiny useful thing</text>
+</svg>
